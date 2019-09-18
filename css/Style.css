@@ -1,0 +1,274 @@
+@font-face {
+  font-family: 'Courgette';
+  src: url("../fonts/Courgette-Regular.ttf");
+}
+
+/* 
+	Author: Sam Shayan
+
+	File name: Style.css
+*/
+body {
+  background-color: white;
+  color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body h1 {
+  margin-bottom: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+}
+
+body h2 {
+  color:rgb(105,137,202);
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+}
+
+body h3 {
+  color:rgb(0,0,51);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+body article span {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+body.experMain {
+  padding: 0 2em;
+}
+
+body section .list {
+  text-align: center;
+  list-style-type: none;
+}
+
+body section .videos {
+  margin: auto 38%;
+}
+
+body footer {
+  font-size: 75%;
+  font-weight: bold;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: rgb(139,160,202);
+  margin-top: 4px;
+}
+
+body p {
+  text-indent: 20px;
+}
+
+main#back {
+  background-color: dodgerblue;
+  height: 730px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 2px;
+}
+
+nav {
+  background-color: rgb(139,160,202);
+  font-weight: bold;
+  padding: 20px 20px;
+  margin-bottom: 4px;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin-right: 2px;
+  padding-left: 1px;
+  font-family: 'Courgette', cursive;
+}
+
+nav > ul > li {
+  display: inline;
+  border: 1px solid white;
+  padding: 1em;
+  border-right: none;
+  border-left: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(33,85,187);
+  color: white;
+}
+
+#banner {
+  text-align: center;
+  padding-top: 18%;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 30pt;
+}
+
+#aboutIMG {
+  border: 2px solid black;
+  border-radius: 15%;
+}
+
+figure #selfimg {
+  border-radius: 60%;
+  margin: 2em auto;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+}
+
+figure #bikeimg {
+  border-radius: 60%;
+  margin: 2em auto;
+  float: right;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 20px;
+}
+
+table.experience {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+table.experience td {
+  border: 1px solid black;
+  padding: 0 10vh;
+}
+
+span {
+  color: rgb(33,85,187);
+  font-weight: bold;
+}
+
+form.ContactForm {
+  margin: auto 35em;
+}
+
+label {
+  display: inline-block;
+  clear: left;
+  width: 250px;
+}
+
+#leftfooter {
+  float: left;
+  padding-left: 3em;
+}
+
+#rightfooter {
+  float: right;
+  padding-right: 3em;
+}
+
+/*  ---------------Mobile Styles: 0px to 480px -----------*/
+@media (max-width: 480px) {
+  ul.menu > li {
+    display: block;
+  }
+  nav.horizontal a {
+    font-size: 1.5em;
+    line-height: 2.2em;
+  }
+  #bikeimg {
+    display: none;
+  }
+  table.experience {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+  table.experience td {
+    border: 1px solid black;
+    padding: 0 2vh;
+  }
+  form.ContactForm {
+    margin: auto;
+  }
+  .list {
+    width: 100%;
+    font-size: 1.2em;
+    margin-left: -1.5em;
+  }
+  #back {
+    background-image: url(../images/vancouver-skyline-winter-wallpaper-4.jpg);
+    background-size: cover;
+    height: 520px;
+    width: 460px;
+  }
+  #leftfooter,
+  #rightfooter {
+    display: none;
+  }
+  article {
+    margin: 0 2em;
+    font-size: 1.5em;
+  }
+  #banner {
+    display: none;
+  }
+}
+
+/* ----------------tablet---------------*/
+@media (min-width: 481px) and (max-width: 780px) {
+  ul li {
+    margin-right: 0em;
+    position: relative;
+    width: 30%;
+    font-size: 1.5em;
+  }
+  .logos {
+    background-repeat: no-repeat;
+    margin: 1em;
+  }
+  #rightfooter,
+  #leftfooter {
+    display: none;
+  }
+  #back {
+    background-image: url(../images/window-reflections_42340.jpg);
+    background-size: cover;
+    height: 830px;
+    width: 750px;
+  }
+  table.experience {
+    font-size: 1.5em;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+  table.experience td {
+    border: 1px solid black;
+    padding: 0 2vh;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  main .list {
+    width: 100%;
+    font-size: 1em;
+    margin: auto 12em;
+    text-align: center;
+  }
+  main article {
+    margin: 0 2em;
+    font-size: 1.5em;
+  }
+  form.ContactForm {
+    margin: 0em 10em;
+    font-size: 1.5em;
+  }
+  .btn {
+    font-size: 1em;
+  }
+  #banner {
+    display: none;
+  }
+}
